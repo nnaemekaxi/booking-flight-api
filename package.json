@@ -1,0 +1,28 @@
+{
+  "name": "booking-flight-api",
+  "version": "1.0.0",
+  "description": "A CRUD app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nnaemeka Elom",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.4.0",
+    "nodemon": "^2.0.16",
+    "uuid": "^9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnaemekaxi/booking-flight-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nnaemekaxi/booking-flight-api/issues"
+  },
+  "homepage": "https://github.com/nnaemekaxi/booking-flight-api#readme"
+}
