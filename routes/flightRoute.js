@@ -7,7 +7,7 @@ router.get('/', controller.getAllFlight)
     .get('/:id', controller.getSingleFlight)
     .post('/', controller.addFlight)
     .put('/:id', controller.updateFlight)
-    .delete('/:id', controller.updateFlight);
+    .delete('/:id', controller.deleteFlight);
 
 module.exports = router;
 

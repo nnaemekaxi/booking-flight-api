@@ -28,4 +28,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/ HTTP/1.1
+DELETE http://localhost:3000/ad7ce80c-fa12-4330-bffd-52a1a0ad3931 HTTP/1.1

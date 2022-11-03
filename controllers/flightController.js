@@ -10,10 +10,8 @@ const {v4: uuid} = require("uuid");
 //Add/Book Flight
 exports.addFlight = async (req, res) => {
     try {
-        const {title, time, price, date} = await req.body;
-        const ticket = {
-            id:uuid(), title, time, price, date 
-        };
+        const ticket = await req.body;
+        ticket.id = uuid();
         flightUsers.push(ticket);
         res.status(201).json({
             message: "New Flight Ticket Booked",
@@ -75,10 +73,9 @@ exports.deleteFlight = async (req, res) => {
     try {
         let id = req.params.id;
         const customer = flightUsers.find((customer) => customer.id === id);
-        flightUsers.slice(flightUsers.indexOf(customer));
+        flightUsers.splice(customer, 1);
         res.status(200).json({
             message: "Customer Info Removed",
-            customer,
         });
     } catch (err) {
         res.status(500).json({message: err.message});
